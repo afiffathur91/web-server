@@ -1,0 +1,70 @@
+/*before styling*/
+
+/* h1 {
+    color: grey;
+}
+
+img{
+    width: 250px;
+} */
+
+/*after styling*/
+/* Global styles */
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2C3E50; /* Dark blue background color */
+}
+
+/* Header styles */
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/* Input and button styles */
+input {
+    border: 2px solid #cccccc;
+    padding: 8px;
+    background-color: #314355; /* Dark blue background color for input */
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid #cccccc;
+    background: #00B87B; /* Dark green background color for the button */
+    color: white;
+    padding: 9px;
+}
+
+/* Main content styles */
+.main-content {
+    flex-grow: 1;
+}
+
+footer{
+    color: #888888;
+    border-top: 2px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
