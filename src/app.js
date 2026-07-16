@@ -22,8 +22,12 @@ hbs.registerPartials(partialsPath)
 //setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
-app.get('', (req, res) => {
-    res.render('index',{
+app.get('/', (req, res) => {
+    res.redirect('/tentang')
+})
+
+app.get('/cuaca', (req, res) => {
+    res.render('index', {
         title: 'Aplikasi Cek Cuaca',
         name: 'Afif Fathur'
     })
@@ -32,7 +36,10 @@ app.get('', (req, res) => {
 app.get('/tentang', (req, res) => {
     res.render('tentang', {
         title: 'Tentang Saya',
-        name: 'Afif Fathur'
+        name: 'Afif Fathur',
+        github: 'https://github.com/afiffathur91',
+        email: 'afiffathur83@gmail.com',
+        instagram: 'https://instagram.com/afif_fathur05'
     })
 })
 
