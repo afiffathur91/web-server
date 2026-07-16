@@ -1,11 +1,11 @@
 header{
-    margin-top: 16px;
-    margin-bottom: 48px;
-    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 h1{
-    font-size: 64px;
+    font-size: 36px;
     margin-bottom: 16px;
 }
 
@@ -13,6 +13,93 @@ header a{
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+}
+
+/* Site navigation */
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 24px;
+    background: var(--dark);
+    border-bottom: 1px solid var(--secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.tentang-page .site-nav {
+    margin-bottom: 0;
+}
+
+.site-nav-brand {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.site-nav-brand:hover {
+    color: var(--light);
+}
+
+.site-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-nav-links a {
+    color: var(--light);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.site-nav-links a:hover {
+    opacity: 1;
+    color: var(--primary);
+}
+
+/* Tentang page */
+.tentang-page {
+    background: var(--dark);
+    color: var(--light);
+    font-family: 'Heebo', sans-serif;
+}
+
+.tentang-page .container {
+    max-width: 1140px;
+}
+
+.sidebar-profile {
+    background: var(--secondary);
+    border-radius: 4px;
+}
+
+.profile-photo {
+    object-fit: cover;
+    max-height: 280px;
+}
+
+.stat-card,
+.project-card {
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.footer-section {
+    border-radius: 4px;
+}
+
+.tentang-page a.text-light:hover {
+    color: var(--primary) !important;
 }
 
 
